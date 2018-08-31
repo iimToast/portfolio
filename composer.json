@@ -8,6 +8,7 @@
     "monolog/monolog": "^1.22",
     "sensio/framework-extra-bundle": "^5.2",
     "silex/silex": "^2.0.4",
+    "symfony/apache-pack": "^1.0",
     "symfony/console": "*",
     "symfony/expression-language": "*",
     "symfony/flex": "^1.1",
