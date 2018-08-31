@@ -30,7 +30,8 @@
         "symfony/maker-bundle": "^1.6",
         "symfony/profiler-pack": "^1.0",
         "symfony/test-pack": "*",
-        "symfony/web-server-bundle": "*"
+        "symfony/web-server-bundle": "*",
+        "heroku/heroku-buildpack-php": "*"
     },
     "config": {
         "preferred-install": {
