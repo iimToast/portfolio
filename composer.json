@@ -5,7 +5,9 @@
     "php": "^7.0.8",
     "ext-ctype": "*",
     "ext-iconv": "*",
+    "monolog/monolog": "^1.22",
     "sensio/framework-extra-bundle": "^5.2",
+    "silex/silex": "^2.0.4",
     "symfony/console": "*",
     "symfony/expression-language": "*",
     "symfony/flex": "^1.1",
@@ -17,25 +19,23 @@
     "symfony/security-bundle": "*",
     "symfony/serializer-pack": "*",
     "symfony/swiftmailer-bundle": "^3.1",
+    "symfony/twig-bridge": "^3",
     "symfony/twig-bundle": "*",
     "symfony/validator": "*",
     "symfony/web-link": "*",
     "symfony/webpack-encore-pack": "^1.0",
     "symfony/yaml": "*",
-    "silex/silex": "^2.0.4",
-    "monolog/monolog": "^1.22",
-    "twig/twig": "^2.0",
-    "symfony/twig-bridge": "^3"
+    "twig/twig": "^2.0"
   },
   "require-dev": {
     "doctrine/doctrine-fixtures-bundle": "^3.0",
+    "heroku/heroku-buildpack-php": "*",
     "symfony/debug-pack": "*",
     "symfony/dotenv": "*",
     "symfony/maker-bundle": "^1.6",
     "symfony/profiler-pack": "^1.0",
     "symfony/test-pack": "*",
-    "symfony/web-server-bundle": "*",
-    "heroku/heroku-buildpack-php": "*"
+    "symfony/web-server-bundle": "*"
   },
   "config": {
     "preferred-install": {
