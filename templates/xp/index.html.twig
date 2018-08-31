@@ -1,0 +1,214 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  {{ controller_name }}!{% endblock %}
+
+{% block body %}
+  {{ parent() }}
+  <main class="row">
+    <div class="main-header">
+      <h1>
+        {{controller_name}}
+      </h1>
+    </div>
+    <section class="row xp">
+      <article class="col-md-12">
+        <h3>
+          Remerciements
+        </h3>
+        <p>
+          Je souhaite remercier tous les acteurs de mes expériences pour tout ce qu'ils m'ont apporté, un grand merci à l'IIM, l'ESD, Natixis, Team Media et mention spéciale à Coralie Boulay pour ses bons conseils et sa capacité à nous faire avancer, merci
+          Coralie !
+        </p>
+      </article>
+      <article class="col-md-12">
+        <div class="experiences">
+
+          <div class="timeline">
+            <h2>
+              Expériences
+            </h2>
+            <div class="container-timeline left" onclick="fnModal1()">
+              <div class="content">
+                <h2>2018-Maintenant</h2>
+                <p>Stage de 6 mois à Team Media en tant que chef de projet digital technique</p>
+              </div>
+              <div class="modal" id="modal-Teamedia">
+                <span class="close" onclick="span1(event)">&times;</span>
+                <div class="modal-content">
+                  <h2>
+                    Job description
+                  </h2>
+                  <p>
+                    Au sein de l'équipe Adops, je suis en charge de projets permettant d'optimiser le rendement de la régie.
+                    <br>
+                    Mes compétences de développeur me permettent d'être le référent technique sur les sujets d'intégrations.
+                  </p>
+                  <h3>Missions</h3>
+                  <ul>
+                    <li>- Réalisation de templates en javascript, HTML5 et CSS3</li>
+                    <li>- En charge de l'intégration du header bidding, un projet permettant d'optimiser les revenus</li>
+                    <li>- En consultant technique sur les projets d'intégration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container-timeline right" onclick="fnModal2()">
+              <div class="content">
+                <h2>2016-2017</h2>
+                <p>Année d'alternance à Emovis en tant que chargé de communication et de marketing</p>
+              </div>
+              <div class="modal" id="modal-emovis">
+                <span class="close" onclick="span2(event)">&times;</span>
+                <div class="modal-content">
+                  <h2>
+                    Job description
+                  </h2>
+                  <p>
+                    En tant que chargé de communication et marketing, j'ai réalisé des missions de communication interne et ai été en charge de la gestion des réseaux sociaux.
+                  </p>
+                  <h3>Missions</h3>
+                  <ul>
+                    <li>- Webmaster du site web emovis.com</li>
+                    <li>- Gestion des réseaux sociaux d'emovis</li>
+                    <li>- Réalisation d'un RFI pour un projet d'installation de système de péage</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container-timeline left" onclick="fnModal3()">
+              <div class="content">
+                <h2>2015</h2>
+                <p>Stage de 6 mois à Natixis en tant que développeur PHP</p>
+              </div>
+              <div class="modal" id="modal-natixis">
+                <span class="close" onclick="span3(event)">&times;</span>
+                <div class="modal-content">
+                  <h2>
+                    Job description
+                  </h2>
+                  <p>
+                    Stage en tant que développeur PHP, j'ai travaillé sur la création d'un dashboard interne permettant de suivre en direct l'état de fonctionnement des différents outils internes de Natixis.
+                  </p>
+                  <h3>Missions</h3>
+                  <ul>
+                    <li>- Dashboard de monitoring interne</li>
+                    <li>- Scripts d'automatisation de génération de rapports</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container-timeline right" onclick="fnModal4()">
+              <div class="content">
+                <h2>2012-2018</h2>
+                <p>Réalisation de projets de professionnels dans le cadre scolaire en tant que chef de projet, développeur, consultant SEO/ UX, PO...</p>
+              </div>
+              <div class="modal" id="modal-iim">
+                <span class="close" onclick="span4(event)">&times;</span>
+                <div class="modal-content">
+                  <h2>
+                    Détails
+                  </h2>
+                  <p>
+                    J'ai travaillé sur des projets de refonte de site web, de stratégie digitale, des audits SEO... j'ai pu toucher à beaucoup de domaine du digital.
+                    <br>
+                    UX, SEO, Développement, Stratégie de communication, Réseaux sociaux, Business plans...
+                  </p>
+                  <h3>Réalisations</h3>
+                  <ul>
+                    <li>- Compétition Pandora</li>
+                    <li>- Digikid</li>
+                    <li>- Refonte Osezlebienetre</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="formation">
+
+          <div class="timeline">
+            <h2>
+              Formation
+            </h2>
+            <div class="container-timeline left slideanim">
+              <div class="content">
+                <h2>2016-2018</h2>
+                <p>Mastère "Expert en Stratégies Digitales"
+                  <br>
+                  Ecole Supérieure du Digital</p>
+              </div>
+            </div>
+            <div class="container-timeline right slideanim">
+              <div class="content">
+                <h2>2011-2015</h2>
+                <p>Bachelor "Chef de Projet Multimédia" spécialité Web
+                  <br>
+                  Institut de l'Internet et du Multimédia</p>
+              </div>
+            </div>
+            <div class="container-timeline left slideanim">
+              <div class="content">
+                <h2>2009-2011</h2>
+                <p>Fac Paris Descartes, Maths Info
+                </p>
+              </div>
+            </div>
+            <div class="container-timeline right slideanim">
+              <div class="content">
+                <h2>2009</h2>
+                <p>Bac S spé Maths option Sciences de l'Ingénieur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script>
+    var modal1 = document.getElementById('modal-Teamedia');
+    var modal2 = document.getElementById('modal-emovis');
+    var modal3 = document.getElementById('modal-natixis');
+    var modal4 = document.getElementById('modal-iim');
+
+    var mod1 = document.getElementById('modal1');
+    var mod2 = document.getElementById('modal2');
+    var mod3 = document.getElementById('modal3');
+    var mod4 = document.getElementById('modal4');
+
+    function fnModal1() {
+      modal1.style.display = "block";
+    }
+    function fnModal2() {
+      modal2.style.display = "block";
+    }
+    function fnModal3() {
+      modal3.style.display = "block";
+    }
+    function fnModal4() {
+      modal4.style.display = "block";
+    }
+
+    function span1(event) {
+      document.getElementById('modal-Teamedia').style.display = "none";
+      event.stopPropagation();
+    }
+
+    function span2(event) {
+      document.getElementById('modal-emovis').style.display = "none";
+      event.stopPropagation();
+    }
+    function span3(event) {
+      document.getElementById('modal-natixis').style.display = "none";
+      event.stopPropagation();
+    }
+    function span4(event) {
+      document.getElementById('modal-iim').style.display = "none";
+      event.stopPropagation();
+    }
+  </script>
+
+{% endblock %}

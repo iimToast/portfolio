@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  {{ controller_name }}!{% endblock %}
+
+{% block body %}
+  {{ parent() }}
+  <main class="row">
+    <div class="main-header">
+      <h1>
+        {{controller_name}}
+      </h1>
+      <img src="{{asset(controller_img)}}" alt="{{controller_img_alt}}">
+    </div>
+    <section class="row myself">
+      <article class="col-md-12">
+        <h2>
+          Bio
+        </h2>
+        <p class="slideanim">
+          Hello tout le monde ! Moi c'est Kevin, je suis passionné de digital ! Profil technique, je m'intéresse de près au développement, que j'ai découvert à la fac en Maths Info mais également au digital dans son ensemble !
+          <br>
+          Après avoir été développeur PHP et chargé de communication marketing, j'ai récemment commencé une nouvelle aventure au sein de Team Media, régie du groupe Le Parisien - Les Echos, en tant que chef de projet digital technique. J'ai orienté mes études
+          afin d'avoir un profil plutôt général tout en ayant un fort background technique, ce qui me permet d'être plus efficace et de couvrir plus de sujet.
+        </p>
+      </article>
+      <article class="col-md-12">
+        <h2>
+          Le futur
+        </h2>
+        <p class="slideanim">
+          Je crois en le digital, j’aime le dév, j’aime le web et je le comprends bien, je comprends les enjeux des entreprises à passer au digital, ainsi que les contraintes liées à une telle transformation. Je veux participer à celle-ci en apportant mes
+          connaissances et compétences au sein d’une entreprise. Pas exclu de passer dév freelance, de monter ma boîte, de bosser en start-up ou dans une grosse boîte, en start-up ou non… La qualité la plus importante dont je dispose est l’adaptation.
+<br>
+          J’ai appris plusieurs méthodes et je les utiliserai en les adaptant pour continuer à apprendre tous les jours et à m'adapter à un milieu en constante évolution.
+        </p>
+      </article>
+      <article class="col-md-12">
+        <h2>
+          Et en dehors de ça ?
+        </h2>
+        <p class="slideanim">
+          Je réalise également des sites webs, j'assiste à la création d'agence immobilière, et je me tiens à jour concernant les nouvelles technologies de développement ainsi que l'actualité du digital.
+        </p>
+
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+
+{% endblock %}

@@ -1,0 +1,600 @@
+/* RESET CSS */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END RESET CSS */
+/* HEADER */
+body {
+	background-color: #F9F9F9;
+}
+
+
+header {
+margin-bottom: 50px;
+
+	img.logo {
+		width: 20vw;
+		height: 14vw;
+		margin: 0 auto;
+	}
+
+	nav {
+		display: block;
+		margin: auto;
+		width: 80%;
+		background-color: blue;
+
+		ul {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: blue;
+
+			li {
+				width: 20%;
+				background-color: #00C8C8C8;
+				:hover {
+					background-color: #00D9D9;
+				}
+
+				a {
+					width: 100%;
+					font-size: 1.5em;
+					font-weight: bold;
+					color: #FFFFFF;
+					text-align: center;
+					display: block;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 600px) {
+	/* Place the timelime to the left */
+	.timeline::after {
+		left: 31px;
+	}
+	/* Full-width containers */
+	.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+
+		::before {
+			left: 60px;
+			border: medium solid white;
+			border-width: 10px 10px 10px 0;
+			border-color: transparent white transparent transparent;
+		}
+	}
+	/* Make sure all circles are at the same spot */
+	.left::after,
+	.right::after {
+		left: 15px;
+	}
+	/* Make all right containers behave like the left ones */
+	.right {
+		left: 0;
+	}
+}
+/* END HEADER */
+main {
+	.main-header {
+		width: 90%;
+		margin: auto;
+
+		h1 {
+			font-size: 3vw;
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			color: #3b5067;
+			font-weight: bold;
+		}
+
+		img {
+			width: 25vw;
+			height: auto;
+			display: block;
+			margin: auto;
+		}
+	}
+
+	section.myself {
+		background: #474e5d;
+		h2 {
+			font-size: 2.1em;
+			text-align: center;
+			color: #00C8C8;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 1.4em;
+			line-height: 1.6em;
+			padding: 15px;
+			border: 1px solid #00C8C8;
+			border-radius: 10px;
+			background-color: #FFF;
+		}
+	}
+
+	section.skillz {
+		h2 {
+			font-size: 2.1em;
+			text-align: center;
+			color: #00C8C8;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+	}
+
+	section.home {
+		display: flex;
+		flex-wrap: wrap;
+
+		.view {
+			width: 300px;
+			height: 200px;
+			margin: 10px;
+			float: left;
+			border: 10px solid #fff;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			box-shadow: 1px 1px 2px #e6e6e6;
+			cursor: default;
+
+			.content,
+			.mask {
+				width: 100%;
+				height: 300px;
+				position: absolute;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				background-color: rgba(185,185,185, 0.7);
+
+				a {
+					color: #00C8C8;
+					font-weight: bold;
+					font-size: 1.2em;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					padding-left: 10px;
+					padding-right: 10px;
+					border-radius: 20px;
+					background-color: #FFF;
+				}
+			}
+
+			img {
+				display: block;
+				position: relative;
+			}
+
+			h2 {
+				text-transform: uppercase;
+				color: #fff;
+				text-align: center;
+				position: relative;
+				font-size: 17px;
+				padding: 10px;
+				background: rgba(0, 0, 0, 0.8);
+				margin: 20px 0 0;
+			}
+
+			p {
+				font-family: Georgia, serif;
+				font-style: italic;
+				font-size: 1.2em;
+				position: relative;
+				color: #000;
+				padding: 10px 20px 20px;
+				text-align: center;
+			}
+
+			a {
+				.info {
+					display: inline-block;
+					text-decoration: none;
+					padding: 7px 14px;
+					background: #000;
+					color: blue;
+					text-transform: uppercase;
+					box-shadow: 0 0 1px #000;
+				}
+			}
+		}
+
+		.view-first {
+			:hover {
+				.mask {
+					opacity: 1;
+				}
+			}
+		}
+
+		article.home-article {
+			width: 45%;
+			text-align: center;
+			height: 300px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	section.xp {
+		h2 {
+			font-size: 2.3em;
+			text-align: center;
+			padding-bottom: 15px;
+			margin-top: 10px;
+			color: #00C8C8;
+		}
+		h3 {
+			font-size: 1.8em;
+			color: #00C8C8;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 1.2em;
+		}
+		.experiences {
+			margin-top: 25px;
+		}
+
+		.formation {
+			margin-top: 75px;
+
+			h2 {
+				font-size: 2.3em;
+				text-align: center;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
+
+		.timeline {
+			position: relative;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+			background-color: #474e5d;
+			font-family: Helvetica, sans-serif;
+
+			.container-timeline {
+				padding: 10px 40px;
+				position: relative;
+				background-color: inherit;
+				width: 50%;
+
+				:hover {
+					opacity: 0.8;
+				}
+
+				.modal {
+					display: none;
+					position: fixed;
+					z-index: 1;
+					padding-top: 100px;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					overflow: auto;
+					background-color: #222222;
+					opacity: 0.9;
+				}
+
+				.modal-content {
+					margin: auto;
+					display: block;
+					width: 80%;
+					max-width: 700px;
+					padding: 20px;
+					-webkit-animation-name: zoom;
+					-webkit-animation-duration: 0.6s;
+					animation-name: zoom;
+					animation-duration: 0.6s;
+
+					p {
+						font-size: 1.2em;
+						line-height: 1.3em;
+					}
+					h3 {
+						margin-top: 20px;
+						margin-bottom: 10px;
+						font-size: 1.8em;
+						color: #00C8C8;
+					}
+					ul {
+						margin-top: 10px;
+						margin-bottom: 10px;
+					}
+				}
+				/* The Close Button */
+				.close {
+					position: absolute;
+					top: 15px;
+					right: 35px;
+					color: #f1f1f1;
+					font-size: 40px;
+					font-weight: bold;
+					transition: 0.3s;
+
+					:focus,
+					:hover {
+						color: #bbb;
+						text-decoration: none;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		/* Place the container to the left */
+		.left {
+			left: 0;
+		}
+		/* Place the container to the right */
+		.right {
+			left: 50%;
+		}
+
+		.content {
+			padding: 20px 30px;
+			background-color: white;
+			position: relative;
+			border-radius: 6px;
+		}
+	}
+}
+
+.slideanim {
+	visibility: hidden;
+	visibility: visible\9;
+	/*For old IE browsers IE6-8 */
+	::after {
+		/* useful when its child elements are float:left; */
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.slideanim.slide {
+	visibility: visible;
+	animation: slide 1s;
+}
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(0);
+	}
+
+	to {
+		-webkit-transform: scale(1);
+	}
+}
+@keyframes zoom {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+/* Make sure that padding behaves as expected */
+* {
+	box-sizing: border-box;
+}
+/* Container for skill bars */
+.container-skillz {
+	width: 100%;
+	/* Full width */
+	background-color: #ddd;
+	/* Grey background */
+}
+
+.skills {
+	text-align: right;
+	/* Right-align text */
+	padding: 10px;
+	/* Add some padding */
+	color: white;
+	/* White text color */
+}
+
+
+.html {
+	width: 90%;
+	background-color: #4CAF50;
+}
+/* Green */
+.css {
+	width: 80%;
+	background-color: #2196F3;
+}
+/* Blue */
+.js {
+	width: 75%;
+	background-color: #49787d;
+}
+/* Red */
+.php {
+	width: 85%;
+	background-color: #005229;
+}
+
+
+
+
+/* Dark Grey */
+/* END MAIN */
+/* FOOTER */
+footer {}
+/* END FOOTER */

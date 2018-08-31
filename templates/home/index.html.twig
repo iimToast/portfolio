@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  {{ controller_name }}!{% endblock %}
+
+{% block body %}
+  {{ parent() }}
+  <main class="row">
+    <div class="main-header">
+      <h1>
+        {{controller_name}}
+      </h1>
+    </div>
+    <section class="home col-md-12">
+      <article class="home-article view view-first" onmouseover="excerpt1(event)" onmouseout="excerptout1(event)">
+        <img src="{{ asset('img/react.png') }}">
+     <div class="mask" id="home-art-1">
+     <h2>5 Reasons to love react</h2>
+     <p>React is a JavaScript library for building user interfaces and can be used as a base in the development of single-page or mobile applications. It is maintained by Facebook along with developers community.</p>
+         <a href="https://blog.usejournal.com/5-super-reasons-to-love-react-js-b57505535ea5" class="info">Lire la suite</a>
+     </div>
+      </article>
+      <article class="home-article view view-first" onmouseover="excerpt2(event)" onmouseout="excerptout2(event)">
+        <img src="{{ asset('img/fb.jpg') }}">
+     <div class="mask" id="home-art-2">
+     <h2>Facebook déploie Watch dans le monde entier</h2>
+     <p>Facebook a annoncé mercredi qu'il allait désormais proposer dans le monde entier son service de contenus de vidéo Watch, déjà déployé aux Etats-Unis depuis un peu plus d'un an.</p>
+         <a href="http://www.cbnews.fr/digital/facebook-deploie-watch-dans-le-monde-entier-a1044435" class="info">Lire la suite</a>
+     </div>
+   </article><article class="home-article view view-first" onmouseover="excerpt3(event)" onmouseout="excerptout3(event)">
+        <img src="{{ asset('img/insta.png') }}">
+     <div class="mask" id="home-art-3">
+     <h2>Instagram met en place l’authentification de certains comptes</h2>
+     <p>Instagram (Facebook) a décidé d'ajouter une option à son service : l'authentification des comptes de personnalités, de grandes marques ou d'organisations. </p>
+         <a href="http://www.cbnews.fr/mobile/instagram-met-en-place-l-authentification-de-certains-comptes-a1044434" class="info">Lire la suite</a>
+     </div>
+   </article><article class="home-article view view-first" onmouseover="excerpt4(event)" onmouseout="excerptout4(event)">
+        <img src="{{ asset('img/internet.jpg') }}">
+     <div class="mask" id="home-art-4">
+     <h2>Can You Escape the Internet?</h2>
+     <p>That quote attributed to Andy Warhol — “In the future, everyone will be world-famous for 15 minutes” — may be true. But in the internet age, it should come with the caveat that you’ll have to pay for it with at least 15 minutes of hell.</p>
+         <a href="https://medium.com/s/greatescape/can-you-escape-the-internet-331638ac78a2" class="info">Lire la suite</a>
+     </div>
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script>
+
+    function excerpt1(event) {
+      document.getElementById('home-art-1').style.opacity="1";
+      event.stopPropagation();
+    }
+
+    function excerptout1(event) {
+      document.getElementById('home-art-1').style.opacity="0";
+      event.stopPropagation();
+    }
+
+    function excerpt2(event) {
+      document.getElementById('home-art-2').style.opacity="1";
+      event.stopPropagation();
+    }
+
+    function excerptout2(event) {
+      document.getElementById('home-art-2').style.opacity="0";
+      event.stopPropagation();
+    }
+
+    function excerpt3(event) {
+      document.getElementById('home-art-3').style.opacity="1";
+      event.stopPropagation();
+    }
+
+    function excerptout3(event) {
+      document.getElementById('home-art-3').style.opacity="0";
+      event.stopPropagation();
+    }
+
+    function excerpt4(event) {
+      document.getElementById('home-art-4').style.opacity="1";
+      event.stopPropagation();
+    }
+
+    function excerptout4(event) {
+      document.getElementById('home-art-4').style.opacity="0";
+      event.stopPropagation();
+    }
+
+  </script>
+
+
+{% endblock %}

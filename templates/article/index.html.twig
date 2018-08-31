@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  {{ controller_name }}!{% endblock %}
+
+{% block body %}
+  {{ parent() }}
+  <main class="row">
+    <div class="main-header">
+      <h1>
+        {{controller_name}}
+      </h1>
+    </div>
+    <section class="home col-md-12">
+      <article class="home-article view view-first" onmouseover="excerpt1(event)" onmouseout="excerptout1(event)">
+        <img src="{{ asset('img/react.png') }}">
+     <div class="mask" id="home-art-1">
+     <h2>La presse vs le digital</h2>
+     <p>Que va-t-il advenir des éditeurs ? A l'époque de la digitalisation, la presse papier connait un fort déclin pour laisser sa place à la presse numérique, mais cela ne se fait pas simplement.</p>
+         <a href="https://blog.usejournal.com/5-super-reasons-to-love-react-js-b57505535ea5" class="info">Lire la suite</a>
+     </div>
+      </article>
+      <article class="home-article view view-first" onmouseover="excerpt2(event)" onmouseout="excerptout2(event)">
+        <img src="{{ asset('img/fb.jpg') }}">
+     <div class="mask" id="home-art-2">
+     <h2>Facebook déploie Watch dans le monde entier</h2>
+     <p>Facebook a annoncé mercredi qu'il allait désormais proposer dans le monde entier son service de contenus de vidéo Watch, déjà déployé aux Etats-Unis depuis un peu plus d'un an.</p>
+         <a href="http://www.cbnews.fr/digital/facebook-deploie-watch-dans-le-monde-entier-a1044435" class="info">Lire la suite</a>
+     </div>
+   </article>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script>
+
+    function excerpt1(event) {
+      document.getElementById('home-art-1').style.opacity="1";
+      event.stopPropagation();
+    }
+
+    function excerptout1(event) {
+      document.getElementById('home-art-1').style.opacity="0";
+      event.stopPropagation();
+    }
+
+    function excerpt2(event) {
+      document.getElementById('home-art-2').style.opacity="1";
+      event.stopPropagation();
+    }
+
+    function excerptout2(event) {
+      document.getElementById('home-art-2').style.opacity="0";
+      event.stopPropagation();
+    }
+
+  </script>
+
+
+{% endblock %}
